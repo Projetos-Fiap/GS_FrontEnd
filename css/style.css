@@ -1,0 +1,173 @@
+body {
+	margin: 0;
+	padding: 0;
+	position: relative;
+	width: auto;
+}
+body #page {
+	margin: 0;
+	overflow: hidden;
+	padding: 0;
+	width: auto;
+}
+a {
+	text-decoration: none;
+	outline: none;
+}
+a:active {
+	background: none;
+}
+img {
+	border: none;
+}
+
+header {
+	background-color: #eeebec;
+	margin: 0;
+	padding: 0;
+	position: relative;
+	width: 100%;
+}
+header div {
+	margin: 0 auto;
+	max-width: 940px;
+	overflow: hidden;
+	padding: 41px 10px 27px;
+}
+header div a.logo {
+	float: left;
+	margin: 0 0 0 29px;
+	padding: 0;
+	width: auto;
+}
+header div a.logo img {
+	display: block;
+	margin: 0;
+	padding: 0;
+	width: auto;
+}
+header div ul {
+	display: inline-block;
+	float: right;
+	list-style: none outside none;
+	margin: 0 auto;
+	padding: 17px 0 0;
+	text-align: center;
+	width: 513px;
+}
+header div ul li {
+	display: inline-block;
+	*float: left; /* Needed for IE7 and old versions */
+	margin: 0 35px;
+	padding: 0;
+	position: relative;
+	width: auto;
+}
+header div ul li a {
+	color: #7a6666;
+	font-family: lato-regular-webfont;
+	font-size: 15px;
+	font-weight: normal;
+	line-height: 15px;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+header div ul li a:hover, header div ul li.menu:hover ul li a {
+	color: #c8c10d;
+}
+header div ul li ul li a {
+	color: #cb3362;
+	font-family: lato-regular-webfont;
+	font-size: 15px;
+	font-weight: normal;
+	line-height: 15px;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	text-transform: uppercase;
+}
+header div ul li.menu {
+	min-height: 35px;
+	z-index: 80;
+}
+header div ul li.menu ul {
+	display: block;
+	float: none;
+	left: -99999px;
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	top: 24px;
+	width: 106px;
+	z-index: 90;
+}
+header div ul li.menu:hover ul.primary, header div ul li.menu ul#selected.primary {
+	left: -30px;
+}
+header div ul li.menu:hover ul.secondary, header div ul li.menu ul#selected.secondary {
+	left: -27px;
+}
+header div ul li.menu ul li {
+	float: none;
+	margin: 0;
+	padding: 0;
+}
+
+footer {
+	background-color: #cb3362;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+footer div {
+	margin: 0 auto;
+	max-width: 960px;
+	overflow: hidden;
+	padding: 59px 0 13px;
+}
+footer div p {
+	color: #FFFFFF;
+	display: block;
+	font-family: roboto-regular-webfont;
+	font-size: 12px;
+	font-weight: normal;
+	line-height: 15px;
+	margin: 0;
+	padding: 33px 0 50px;
+	text-align: center;
+	text-transform: none
+}
+footer div .connect {
+	display: block;
+	height: 30px;
+	margin: 0 auto;
+	max-width: none;
+	overflow: hidden;
+	padding: 0;
+	width: 240px;
+}
+footer div .connect a {
+	background: url(../images/icons.png) no-repeat;
+	display: block;
+	float: left;
+	height: 30px;
+	margin: 0 15px;
+	padding: 0;
+	text-indent: -99999px;
+	width: 30px;
+}
+footer div .connect a.facebook {
+	background-position: 0 0;
+}
+footer div .connect a.googleplus {
+	background-position: 0 -32px;
+}
+footer div .connect a.pinterest {
+	background-position: 0 -64px;
+}
+footer div .connect a.twitter {
+	background-position: 0 -96px;
+}
