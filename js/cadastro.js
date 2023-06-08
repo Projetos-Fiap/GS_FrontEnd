@@ -26,110 +26,19 @@ function switchModos(){
         
 }
 
-function validaFirstName() {
-  let campo = document.querySelector('.firstName');
-  let p = document.querySelector(".errorFirstName");
-
-  if (campo.value.trim().length === 0 || campo.value !== campo.value.trim()) {
-    p.innerHTML = "Não é permitido espaços em branco";
-    campo.style.cssText = "border-style: solid;border-width: 3px;border-color: red;";
-    return false;
-  } else if (campo.value.trim().length < 5) {
-    p.innerHTML = "Mínimo de 5 dígitos";
-    campo.style.cssText = "border-style: solid;border-width: 3px;border-color: red;";
-    return false;
-  } else {
-    p.innerHTML = "";
-    campo.style.cssText = "";
-    return true;
-  }
-}
-
-function validaSecondName() {
-  let campo = document.querySelector('.secondName');
-  let p = document.querySelector(".errorSecondName");
-
-  if (campo.value.trim().length === 0 || campo.value !== campo.value.trim()) {
-    p.innerHTML = "Não é permitido espaços em branco";
-    campo.style.cssText = "border-style: solid;border-width: 3px;border-color: red;";
-    return false;
-  } else if (campo.value.trim().length < 5) {
-    p.innerHTML = "Mínimo de 5 dígitos";
-    campo.style.cssText = "border-style: solid;border-width: 3px;border-color: red;";
-    return false;
-  } else {
-    p.innerHTML = "";
-    campo.style.cssText = "";
-    return true;
-  }
-}
-
-function validaEmail() {
-  let campo = document.querySelector('.email');
-  let p = document.querySelector(".errorEmail");
-
-  if (campo.value.trim().length === 0 || campo.value !== campo.value.trim()) {
-    p.innerHTML = "Não é permitido espaços em branco";
-    campo.style.cssText = "border-style: solid;border-width: 3px;border-color: red;";
-    return false;
-  } else if (campo.value.trim().length < 5) {
-    p.innerHTML = "Mínimo de 5 dígitos";
-    campo.style.cssText = "border-style: solid;border-width: 3px;border-color: red;";
-    return false;
-  } else if (!campo.value.includes("@")) {
-    p.innerHTML = "O caractere @ é necessário";
-    campo.style.cssText = "border-style: solid;border-width: 3px;border-color: red;";
-    return false;
-  } else {
-    p.innerHTML = "";
-    campo.style.cssText = "";
-    return true;
-  }
-}
-
-function validaPassword() {
-    let campo = document.querySelector('.password');
-    let p = document.querySelector(".errorPassword");
+function validaLogin() {
+    let username = document.querySelector('.username').value;
+    let password = document.querySelector('.password').value;
   
-    if (campo.value.trim().length === 0) {
-      p.innerHTML = "Campo obrigatório";
-      campo.style.cssText = "border-style: solid;border-width: 3px;border-color: red;";
-      return false;
-    } else if (campo.value.trim().length < 6 || campo.value.trim().length > 8) {
-      p.innerHTML = "A senha deve ter entre 6 e 8 caracteres";
-      campo.style.cssText = "border-style: solid;border-width: 3px;border-color: red;";
+    if (username === 'admin' && password === '123456') {
+      
+      window.location.href = './deuCerto.html';
       return false;
     } else {
-      p.innerHTML = "";
-      campo.style.cssText = "";
-      return true;
+      alert('Usuario ou senha invalidas!');
+      return false;
     }
-}
-
-function validaConfirmPassword(){
-    let password = document.querySelector('.password');
-    let confirmPassword = document.querySelector('.confirmPassword');
-    let p = document.querySelector(".errorConfirmPassword");
-
-    if( password.value.trim() !== confirmPassword.value.trim()){
-        p.innerHTML = "As senhas devem ser iguais"
-        return false;
-    } else {
-        p.innerHTML = ""
-        return true;
-    }
-}
-
-function validaCamposVazios(){
-    let validacao = validaFirstName() & validaSecondName() & validaEmail() & validaPassword()  & validaConfirmPassword();
-
-    if(validacao != 1){
-        alert("Há campos com entradas inválidas!");
-        return false;
-    }
-
-    return true;
-}
-
+  }
+  
 // iniciaLocalStorage()
 iniciaLocalStorage()

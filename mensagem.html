@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="./js/mensagem.js"></script>
+    <title>CP02 - JS</title>
+</head>
+<body class="body">
+    <div>
+        <img class="switch" src="./imgs/apagada.png" onclick="switchModos()"/>
+    </div>
+    <div class="container">
+        <div class="form">
+            <form method="post" action="../GS_FrontEnd/deuCertoM.html" name="form" onsubmit="return validaCamposVazios()">
+                <div>
+                    <label for="firstName">Nome:</label><br>
+                    <input type="text" name="firstName" id="firstName" class="firstName" oninput="validaFirstName()">
+                    <p class="errorFirstName"></p>
+                </div>
+                <div>
+                    <label for="email">Email:</label><br>
+                    <input type="text" name="email" id="email" class="email" oninput="validaEmail()">
+                    <p class="errorEmail"></p>
+                </div>
+                <div>
+                    <label for="secondName">Mensagem:</label><br>
+                    <input type="text" name="secondName" id="secondName" class="secondName" oninput="validaSecondName()">
+                    <p class="errorSecondName"></p>
+                </div>
+                <div>
+                    <label for="secondName">Telefone:</label><br>
+                    <input type="text" name="secondName" id="secondName" class="secondName" oninput="validaSecondName()">
+                    <p class="errorSecondName"></p>
+                </div>
+                <input type="submit">
+            </form>
+            
+        </div>
+    </div>
+</body>
+</html>
