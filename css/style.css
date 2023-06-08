@@ -56,7 +56,7 @@ header div ul {
 	margin: 0;
 	padding: 17px 0 0;
 	text-align: center;
-	width: 513px;
+	width: 32.25em;
 }
 header div ul li {
 	display: inline-block;
@@ -69,9 +69,9 @@ header div ul li {
 header div ul li a {
 	color: #f0e7e7;
 	font-family: lato-regular-webfont;
-	font-size: 15px;
+	font-size: 0.9375em;
 	font-weight: normal;
-	line-height: 15px;
+	line-height: 0.9375em;
 	margin: 0;
 	padding: 0;
 	text-align: center;
@@ -84,16 +84,16 @@ header div ul li a:hover, header div ul li.menu:hover ul li a {
 header div ul li ul li a {
 	color: #2b2729;
 	font-family: lato-regular-webfont;
-	font-size: 15px;
+	font-size: 0.9375em;
 	font-weight: normal;
-	line-height: 15px;
+	line-height: 0.9375em;
 	margin: 0;
 	padding: 0;
 	text-align: center;
 	text-transform: uppercase;
 }
 header div ul li.menu {
-	min-height: 35px;
+	min-height: 2.1875em;
 	z-index: 80;
 }
 header div ul li.menu ul {
@@ -103,15 +103,15 @@ header div ul li.menu ul {
 	margin: 0;
 	padding: 0;
 	position: absolute;
-	top: 24px;
-	width: 106px;
+	top: 1.5em;
+	width: 6.6875em;
 	z-index: 90;
 }
 header div ul li.menu:hover ul.primary, header div ul li.menu ul#selected.primary {
-	left: -30px;
+	left: -1.875em;
 }
 header div ul li.menu:hover ul.secondary, header div ul li.menu ul#selected.secondary {
-	left: -27px;
+	left: -1.6875em;
 }
 header div ul li.menu ul li {
 	float: none;
@@ -281,52 +281,52 @@ header div ul li.menu ul li {
 }
 footer div {
 	margin: 0 auto;
-	max-width: 960px;
+	max-width: 60em;
 	overflow: hidden;
-	padding: 59px 0 13px;
+	padding: 3.6875em 0 0.8125em;
 }
 .footer div p {
 	color: #FFFFFF;
 	display: block;
 	font-family: roboto-regular-webfont;
-	font-size: 12px;
+	font-size: 0.75em;
 	font-weight: normal;
-	line-height: 15px;
+	line-height: 0.9375em;
 	margin: 0;
-	padding: 33px 0 50px;
+	padding: 2.0625em 0 3.125em;
 	text-align: center;
 	text-transform: none
 }
 footer div .connect {
 	display: block;
-	height: 30px;
+	height: 1.875em;
 	margin: 0 auto;
 	max-width: none;
 	overflow: hidden;
 	padding: 0;
-	width: 240px;
+	width: 15em;
 }
 footer div .connect a {
 	background: url(../images/icons.png) no-repeat;
 	display: block;
 	float: left;
-	height: 30px;
-	margin: 0 15px;
+	height: 1.875em;
+	margin: 0 0.9375em;
 	padding: 0;
 	text-indent: -99999px;
-	width: 30px;
+	width: 1.875em;
 }
 footer div .connect a.facebook {
 	background-position: 0 0;
 }
 footer div .connect a.googleplus {
-	background-position: 0 -32px;
+	background-position: 0 -2em;
 }
 footer div .connect a.pinterest {
-	background-position: 0 -64px;
+	background-position: 0 -4em;
 }
 footer div .connect a.twitter {
-	background-position: 0 -96px;
+	background-position: 0 -6em;
 }
 
 /* .carrossel {
