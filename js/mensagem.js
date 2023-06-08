@@ -14,14 +14,14 @@ function switchModos(){
       container.style.cssText = "display: flex;align-items: center;justify-content: center;width: auto;position: absolute;top: 0px;bottom: 0;left: 50px;right: 50px;background-color: white;";
       form.style.cssText = "display: flex;align-items: center;justify-content: center;width: 30%;height: 80%;border-style: solid;border-width: 1px;background-color: blanchedalmond;border-radius: 50px;color: black;";
       body.style.cssText = "background-color:blanchedalmond;padding-right: 10px;"
-      lampada.src = "./imgs/apagada.png"
+      lampada.src = "./images/mobile/apagada.png"
   } else {
       localStorage.setItem("modoEscuro", 1);
 
       container.style.cssText = "display: flex;align-items: center;justify-content: center;width: auto;position: absolute;top: 0px;bottom: 0;left: 50px;right: 50px;background-color: #252526;";
       form.style.cssText = "display: flex;align-items: center;justify-content: center;width: 30%;height: 80%;border-style: solid;border-width: 1px;background-color: #1E1E1E;border-radius: 50px;color: whitesmoke;";
       body.style.cssText = "background-color:#333332;padding-right: 10px;"
-      lampada.src = "./imgs/acesa.png"
+      lampada.src = "./images/mobile/acesa.png"
   }
       
 }

@@ -7,12 +7,13 @@
 	<link rel="stylesheet" href="css/style.css" type="text/css">
 	<script src="./js/index.js"></script>
 </head>
-<body>
+<body class="body">
 	<div id="page">
-		<header>
+		<header class="header">
 			<div>
-				<img src="images/logo.png" alt="">
 				<a href="index.html" class="logo"><img src="./images/mobile/logoo.jpeg.png" alt=""></a>
+				<img src="./images/mobile/apagada.png" alt="dark_mode" class="switch" onclick="switchModos()">
+				<!-- <div>teste</div> -->
 				<ul id="navigation">
 					<li class="selected">
 						<a href="#problem">Problema</a>
@@ -43,7 +44,8 @@
 		</header>
 		<body>
 				  
-			<div class="body">
+			<!-- <div class="body"> -->
+			<div>
 				<div>
 					<section id="problem" class="section1">
 						<h1>O problema que a solução irá resolver</h1>
@@ -69,14 +71,14 @@
 					<div class="texto3">
 						<p>A solução será desenvolvida utilizando tecnologias web modernas, como HTML, CSS e JavaScript para a construção da interface e interações com o usuário.</p>
 						<p>Também serão utilizadas tecnologias de back-end, como um banco de dados para armazenar informações sobre os estabelecimentos doadores e organizações receptoras cadastrados, e uma linguagem de programação, como Python ou Node.js, para desenvolver a lógica de negócios e gerenciar as doações.</p>
-						<div class="carrossel">
-							<div class="carousel-container">
-								<img class="carousel-image active" src="./images/mobile/IMG-20230607-WA0180.jpg" alt="Imagem 1">
-								<img class="carousel-image" src="./images/mobile/css.png" alt="Imagem 2">
-								<img class="carousel-image" src="./images/mobile/js.jpg" alt="Imagem 3">
-								<button class="carousel-button previous">Anterior</button>
-								<button class="carousel-button next">Próximo</button>
-							</div>
+					</div>
+					<div class="carrossel">
+						<div class="carousel-container">
+							<img class="carousel-image active" src="./images/mobile/IMG-20230607-WA0180.jpg" alt="Imagem 1">
+							<img class="carousel-image" src="./images/mobile/css.png" alt="Imagem 2">
+							<img class="carousel-image" src="./images/mobile/js.jpg" alt="Imagem 3">
+							<button class="carousel-button previous">Anterior</button>
+							<button class="carousel-button next">Próximo</button>
 						</div>
 					</div>
 					
@@ -114,7 +116,7 @@
 				</div>
 			</div>
 		</body>
-		<footer>
+		<footer class="footer">
 			<div>
 				<div class="connect">
 					<a href="#" class="facebook">facebook</a>

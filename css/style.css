@@ -1,9 +1,10 @@
-body {
+.body {
 	margin: 0;
 	padding: 0;
 	position: relative;
 	width: auto;
 	background-color: rgb(189, 180, 180);
+	/* background-color: red; */
 }
 body #page {
 	margin: 0;
@@ -23,7 +24,7 @@ img {
 	
 }
 
-header {
+.header {
 	background-color: #2b2729;
 	margin: 0;
 	padding: 0;
@@ -36,7 +37,7 @@ header div {
 	padding: 2.5625em 0.625em 1.6875em;
 }
 
-header div a.logo {
+.logo {
 	float: left;
 	padding: 0;
 	width: auto;
@@ -49,10 +50,10 @@ header div a.logo img {
 }
 header div ul {
 	display: flex;
-	float: center;
+	/* float: center; */
 	white-space: 0.5em;
 	list-style: none outside none;
-	margin: 0 auto;
+	margin: 0;
 	padding: 17px 0 0;
 	text-align: center;
 	width: 513px;
@@ -143,7 +144,7 @@ header div ul li.menu ul li {
 .section5,
 .section6 {
 	margin-bottom: 20em;
-	
+	color: black;
 }
 
 
@@ -272,7 +273,7 @@ header div ul li.menu ul li {
 
 
 
-footer {
+.footer {
 	background-color: #2b2729;
 	margin: 0;
 	padding: 0;
@@ -284,7 +285,7 @@ footer div {
 	overflow: hidden;
 	padding: 59px 0 13px;
 }
-footer div p {
+.footer div p {
 	color: #FFFFFF;
 	display: block;
 	font-family: roboto-regular-webfont;
@@ -328,11 +329,22 @@ footer div .connect a.twitter {
 	background-position: 0 -96px;
 }
 
+/* .carrossel {
+	margin: auto;
+	position: relative;
+
+} */
 .carousel-container {
-	width: 900px;
+	width: 100%;
 	height: 700px;
 	overflow: hidden;
 	position: relative;
+	display: flex;
+	margin: 0;
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	
   }
   
   .carousel-image {
@@ -340,7 +352,7 @@ footer div .connect a.twitter {
 	height: 100%;
 	position: absolute;
 	top: 0;
-	left: 0;
+	/* left: 0; */
 	opacity: 0;
 	transition: opacity 0.5s ease-in-out;
   }
@@ -359,13 +371,20 @@ footer div .connect a.twitter {
 	border: none;
 	outline: none;
 	cursor: pointer;
+	border-radius: 10%;
+	height: 40px;
   }
   
   .carousel-button.previous {
-	left: 10px;
+	left: 100px;
   }
   
   .carousel-button.next {
-	right: 10px;
+	right: 20px;
   }
   
+  .switch {
+	margin-left: 2em;
+	height: 70px;
+    width: 70px;
+  }
