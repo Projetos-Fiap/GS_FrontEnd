@@ -117,7 +117,7 @@ function validaConfirmPassword(){
     } else {
         p.innerHTML = ""
         return true;
-    }
+     }
 }
 
 function validaCamposVazios(){
