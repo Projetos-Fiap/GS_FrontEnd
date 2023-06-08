@@ -38,7 +38,32 @@ function validaLogin() {
       alert('Usuario ou senha invalidas!');
       return false;
     }
-  }
-  
+}
+
+function validaConfirmPassword(){
+    let password = document.querySelector('.password');
+    let confirmPassword = document.querySelector('.confirmPassword');
+    let p = document.querySelector(".errorConfirmPassword");
+
+    if( password.value.trim() !== confirmPassword.value.trim()){
+        p.innerHTML = "As senhas devem ser iguais"
+        return false;
+    } else {
+        p.innerHTML = ""
+        return true;
+     }
+}
+
+function validaCamposVazios(){
+    let validacao = validaFirstName() & validaSecondName() & validaEmail() & validaPassword()  & validaConfirmPassword();
+
+    if(validacao != 1){
+        alert("Há campos com entradas inválidas!");
+        return false;
+    }
+
+    return true;
+}
+
 // iniciaLocalStorage()
 iniciaLocalStorage()
