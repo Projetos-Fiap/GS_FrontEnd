@@ -35,9 +35,9 @@ header div {
 	overflow: hidden;
 	padding: 2.5625em 0.625em 1.6875em;
 }
+
 header div a.logo {
 	float: left;
-	margin-left: 13.5em;
 	padding: 0;
 	width: auto;
 }
@@ -59,8 +59,8 @@ header div ul {
 }
 header div ul li {
 	display: inline-block;
-	*float: left; /* Needed for IE7 and old versions */
-	margin: 0 35px;
+	*float: left; 
+	margin: 0 25px;
 	padding: 0;
 	position: relative;
 	width: auto;
@@ -210,7 +210,7 @@ header div ul li.menu ul li {
 	  }
 
 	  .section3 img {
-		width: 40em; /* Ajuste o tamanho da imagem conforme necessário */
+		width: 40em;
 		height: auto;
 		margin-right: 2.7em;
 		margin-left: 12em;
@@ -219,7 +219,7 @@ header div ul li.menu ul li {
 	  }
 
 	  .section4 img {
-		width: 30em; /* Ajuste o tamanho da imagem conforme necessário */
+		width: 30em;
 		height: auto;
 		margin-right: 12em;
 		margin-left: 4.6em;
@@ -228,7 +228,7 @@ header div ul li.menu ul li {
 	  }
 
 	  .section5 img {
-		width: 42em; /* Ajuste o tamanho da imagem conforme necessário */
+		width: 42em;
 		height: 18.8em;
 		margin-right: 4.6em;
 		margin-left: 12em;
@@ -237,7 +237,7 @@ header div ul li.menu ul li {
 	  }
 
 	  .section6 img {
-		width: 47em; /* Ajuste o tamanho da imagem conforme necessário */
+		width: 47em;
 		height: 16.8em;
 		margin-left: 2.4em;
 		margin-right: 10em;
